@@ -1,9 +1,9 @@
 # Repack Lambda
 [![Build Status](https://travis-ci.org/dbuarque/repack-lambda.svg?branch=master)](https://travis-ci.org/dbuarque/repack-lambda)
 
-## Repack Lambda is an opnitated AWS Lambda development and management tool without the hassle
+Repack Lambda is an opnitated AWS Lambda development and management tool without the hassle
 
-This tool is designed to be used for Node.js projects however it can be easily changed to any language.
+Obs. This tool is designed to be used with Node.js projects however it can be easily changed to any language.
 
 ### Features:
 
@@ -17,3 +17,7 @@ This tool is designed to be used for Node.js projects however it can be easily c
 * Easy versioning & release
 
 ### Install
+
+```
+npm install
+```
