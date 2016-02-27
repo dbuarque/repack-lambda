@@ -42,7 +42,16 @@ This command will create 3 files:
 $ npm test
 ```
 
-This will run all tests for all lambda functions
+This will run all tests for all lambda functions or you can run without npm with:
+ 
+```bash
+$ mocha ./tests/myLambda-spec.js --compilers js:babel-register
+```
+
+**PROTIP** If do you choose run it without npm please install mocha as global before 
+```
+$ npm install mocha -g
+``` 
 
 ### Deploy
 Before Deploy you have to get the [AWS Lambda Role Arn](http://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html)
@@ -52,7 +61,7 @@ $ ROLE_ARN=xxxx APP=myLambda npm run deploy
 
 ## Road Map
 
-* Move shell all commands to gulp
+* Move all shell commands to gulp
 * Add command to list all lambdas
 * Add command to remove a lambda function locally
 * Create a Web UI with Reactjs & Redux
