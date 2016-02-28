@@ -5,6 +5,8 @@ Repack Lambda is an boilerplate AWS Lambda development and management template
 
 Obs. This tool is designed to be used with Node.js projects however it can be easily changed to any language.
 
+![Sample Architecture](http://i.imgur.com/SMjfQjC.png)
+
 ### Features:
 
 * Develop multiple lambda functions over the same code base using shared libraries
