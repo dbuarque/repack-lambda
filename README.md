@@ -20,7 +20,18 @@ Obs. This tool is designed to be used with Node.js projects, but it can be chang
 * Easy versioning & release
 * Focus on modularity
 
+### Install
+
+**PROTIP** Be sure to using node 4+ 
+
+```bash
+$ npm install
+```
+
+
 ### Project Structure
+
+All commands are defined as scripts in packages.json
 
 ```bash
 .
@@ -42,14 +53,6 @@ Obs. This tool is designed to be used with Node.js projects, but it can be chang
 ├── tests
 │   └── index-spec.js
 └── webpack.config.js
-```
-
-### Install
-
-**PROTIP** Be sure to using node 4+ 
-
-```bash
-$ npm install
 ```
 
 ### Quick Start
