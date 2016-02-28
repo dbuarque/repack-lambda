@@ -10,11 +10,11 @@ Obs. This tool is designed to be used with Node.js projects however it can be ea
 ### Features:
 
 * Develop multiple lambda functions over the same code base using shared libraries
-* Scaffold new lambda functions (Configs, Handlers & Tests)
+* Scaffold new lambda functions (configs, handlers & tests)
 * One command deploy (build, lint, test & deploy)
-* Webpack build System for production
+* Webpack build system for production
 * Use ES2015 & Babel
-* Use Mocha for Tests
+* Use Mocha for tests
 * Travis for CI 
 * Use ESLint
 * Easy versioning & release
