@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Repack Lambda by dbuarque</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  </head>
+  <body>
+    <section class="page-header">
+      <h1 class="project-name">Repack Lambda</h1>
+      <h2 class="project-tagline">AWS Lambda Microservice Architecture for Node.js</h2>
+      <a href="https://github.com/dbuarque/repack-lambda" class="btn">View on GitHub</a>
+      <a href="https://github.com/dbuarque/repack-lambda/zipball/master" class="btn">Download .zip</a>
+      <a href="https://github.com/dbuarque/repack-lambda/tarball/master" class="btn">Download .tar.gz</a>
+    </section>
+
+    <section class="main-content">
+      <h1>
+<a id="repack-lambda" class="anchor" href="#repack-lambda" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Repack Lambda</h1>
+
+<p><a href="https://travis-ci.org/dbuarque/repack-lambda"><img src="https://travis-ci.org/dbuarque/repack-lambda.svg?branch=master" alt="Build Status"></a></p>
+
+<p>AWS Lambda Microservices Architecture Template</p>
+
+<p>Obs. This template is designed to be used with Node.js projects, but it can be changed to any language.</p>
+
+<p><img src="http://i.imgur.com/SMjfQjC.png" alt="Sample Architecture"></p>
+
+<h3>
+<a id="features" class="anchor" href="#features" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Features:</h3>
+
+<ul>
+<li>Develop multiple lambda functions over the same code base using shared libraries</li>
+<li>Scaffold new lambda functions (configs, handlers &amp; tests)</li>
+<li>One command deploy (build, lint, test &amp; deploy)</li>
+<li>Webpack build system for production</li>
+<li>Use ES2015 &amp; Babel</li>
+<li>Use Mocha for tests</li>
+<li>Travis for CI </li>
+<li>Use ESLint</li>
+<li>Easy versioning &amp; release</li>
+<li>Focus on modularity</li>
+</ul>
+
+<h3>
+<a id="install" class="anchor" href="#install" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install</h3>
+
+<p><strong>PROTIP</strong> Be sure to use node 4+ </p>
+
+<div class="highlight highlight-source-shell"><pre>$ npm install</pre></div>
+
+<h3>
+<a id="project-structure" class="anchor" href="#project-structure" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Project Structure</h3>
+
+<p>All commands are defined as scripts in packages.json</p>
+
+<div class="highlight highlight-source-shell"><pre><span class="pl-c1">.</span>
+├── LICENSE
+├── README.md
+├── bin
+│   ├── build.sh
+│   ├── create.sh
+│   └── deploy.sh
+├── config
+│   └── templates
+│       ├── lambda-spec.tpl.js - Spec <span class="pl-c1">test</span> template
+│       ├── lambda.config.tpl.js - Lambda config template
+│       └── lambda.tpl.js - Lambda handler template
+├── gulpfile.js
+├── package.json
+├── src
+│   └── lambdas
+├── tests
+│   └── index-spec.js
+└── webpack.config.js</pre></div>
+
+<h3>
+<a id="quick-start" class="anchor" href="#quick-start" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Quick Start</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ APP=myLambda npm run create</pre></div>
+
+<p>This command will create 3 files:</p>
+
+<ol>
+<li>
+<code>./src/lambdas/myLambda.js</code> - Lambda handler function</li>
+<li>
+<code>./tests/myLambda-spec.js</code> - Function test file with Mocha</li>
+<li>
+<code>./config/myLambda.config.js</code> - Lambda config file</li>
+</ol>
+
+<h3>
+<a id="tests" class="anchor" href="#tests" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Tests</h3>
+
+<div class="highlight highlight-source-shell"><pre>$ npm <span class="pl-c1">test</span></pre></div>
+
+<p>This will run all tests for all lambda functions or you can run without npm with:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ mocha ./tests/myLambda-spec.js --compilers js:babel-register</pre></div>
+
+<p><strong>PROTIP</strong> If do you choose run it without npm please install mocha as global before </p>
+
+<pre><code>$ npm install mocha -g
+</code></pre>
+
+<h3>
+<a id="deploy" class="anchor" href="#deploy" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deploy</h3>
+
+<p>Before Deploy you have to get the <a href="http://docs.aws.amazon.com/lambda/latest/dg/intro-permission-model.html">AWS Lambda Role Arn</a></p>
+
+<div class="highlight highlight-source-shell"><pre>$ ROLE_ARN=xxxx APP=myLambda npm run deploy</pre></div>
+
+<h2>
+<a id="road-map" class="anchor" href="#road-map" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Road Map</h2>
+
+<ul>
+<li>Move all shell commands to gulp</li>
+<li>Add command to list all lambdas</li>
+<li>Add command to remove a lambda function locally</li>
+<li>Create a Web UI with Reactjs &amp; Redux</li>
+<li>Give Support to other platforms</li>
+<li>Improve AWS integration with new commands</li>
+</ul>
+
+<h2>
+<a id="contribute" class="anchor" href="#contribute" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contribute</h2>
+
+<p>You can contribute just opening new <a href="https://github.com/dbuarque/repack-lambda/issues">issues here</a> or sending a pull request with tests</p>
+
+      <footer class="site-footer">
+        <span class="site-footer-owner"><a href="https://github.com/dbuarque/repack-lambda">Repack Lambda</a> is maintained by <a href="https://github.com/dbuarque">dbuarque</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
+      </footer>
+
+    </section>
+
+  
+  </body>
+</html>
