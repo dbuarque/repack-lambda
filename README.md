@@ -1,7 +1,7 @@
 # Repack Lambda
 [![Build Status](https://travis-ci.org/dbuarque/repack-lambda.svg?branch=master)](https://travis-ci.org/dbuarque/repack-lambda)
 
-Repack Lambda is an boilerplate AWS Lambda development and management template
+AWS Lambda Microservices Architecture Template
 
 Obs. This tool is designed to be used with Node.js projects however it can be easily changed to any language.
 
