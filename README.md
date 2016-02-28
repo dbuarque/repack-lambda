@@ -67,6 +67,7 @@ $ ROLE_ARN=xxxx APP=myLambda npm run deploy
 * Add command to list all lambdas
 * Add command to remove a lambda function locally
 * Create a Web UI with Reactjs & Redux
+* Give Support to other platforms
 * Improve AWS integration with new commands
 
 ## Contribute
