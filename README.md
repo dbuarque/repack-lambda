@@ -3,7 +3,8 @@
 
 A AWS Lambda Microservices Architecture Template
 
-Obs. This template is designed to be used with Node.js projects, but it can be changed to any language.
+This architecture is designed to be used with Node.js projects, but it can be changed to any language. It is not recommended for long running jobs, the max timeout is 300 seconds.
+
 
 ![Sample Architecture](http://i.imgur.com/SMjfQjC.png)
 
