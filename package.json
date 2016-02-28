@@ -1,6 +1,6 @@
 {
   "name": "repack-lambda",
-  "version": "1.0.1",
+  "version": "0.1.1",
   "description": "Repack Lambda - An opnitated AWS Lambda development and management tool",
   "homepage": "https://github.com/repack/repack-lambda",
   "scripts": {
