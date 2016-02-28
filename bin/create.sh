@@ -3,6 +3,7 @@
 if [ -z "$APP" ]; then
     echo "APP env not found! Please export the APP env e.g. APP=lambdaname npm run create"
 else
+    mkdir -p ./src/lambdas
     cp ./config/templates/lambda.config.tpl.js ./config/$APP.config.js
     cp ./config/templates/lambda.tpl.js ./src/lambdas/$APP.js
     cp ./config/templates/lambda-spec.tpl.js ./tests/$APP-spec.js
