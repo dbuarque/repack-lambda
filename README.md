@@ -22,7 +22,7 @@ Obs. This template is designed to be used with Node.js projects, but it can be c
 
 ### Install
 
-**PROTIP** Be sure to using node 4+ 
+**PROTIP** Be sure to use node 4+ 
 
 ```bash
 $ npm install
