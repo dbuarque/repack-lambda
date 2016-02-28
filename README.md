@@ -7,30 +7,6 @@ Obs. This tool is designed to be used with Node.js projects, but it can be chang
 
 ![Sample Architecture](http://i.imgur.com/SMjfQjC.png)
 
-### Project Structure
-
-```bash
-.
-├── LICENSE
-├── README.md
-├── bin
-│   ├── build.sh
-│   ├── create.sh
-│   └── deploy.sh
-├── config
-│   └── templates
-│       ├── lambda-spec.tpl.js
-│       ├── lambda.config.tpl.js
-│       └── lambda.tpl.js
-├── gulpfile.js
-├── package.json
-├── src
-│   └── lambdas
-├── tests
-│   └── index-spec.js
-└── webpack.config.js
-```
-
 ### Features:
 
 * Develop multiple lambda functions over the same code base using shared libraries
@@ -43,6 +19,30 @@ Obs. This tool is designed to be used with Node.js projects, but it can be chang
 * Use ESLint
 * Easy versioning & release
 * Focus on modularity
+
+### Project Structure
+
+```bash
+.
+├── LICENSE
+├── README.md
+├── bin
+│   ├── build.sh
+│   ├── create.sh
+│   └── deploy.sh
+├── config
+│   └── templates
+│       ├── lambda-spec.tpl.js - Spec test template
+│       ├── lambda.config.tpl.js - Lambda config template
+│       └── lambda.tpl.js - Lambda handler template
+├── gulpfile.js
+├── package.json
+├── src
+│   └── lambdas
+├── tests
+│   └── index-spec.js
+└── webpack.config.js
+```
 
 ### Install
 
