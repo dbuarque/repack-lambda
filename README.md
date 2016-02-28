@@ -3,7 +3,7 @@
 
 AWS Lambda Microservices Architecture Template
 
-Obs. This tool is designed to be used with Node.js projects however it can be easily changed to any language.
+Obs. This tool is designed to be used with Node.js projects, but it can be changed to any language.
 
 ![Sample Architecture](http://i.imgur.com/SMjfQjC.png)
 
