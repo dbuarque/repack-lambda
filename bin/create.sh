@@ -27,6 +27,6 @@ else
          ;;
     esac
     echo "============================================="
-    echo " Lambda function created with sucess!"
+    echo " Lambda function created with success!"
     echo "============================================="
 fi
