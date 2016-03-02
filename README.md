@@ -24,7 +24,7 @@ This architecture is designed to be used with Node.js projects, but it can be ch
 
 ### Install
 
-**PROTIP** Be sure to use node 4+ 
+Note: Requires a node version >= 4
 
 ```bash
 $ npm install
