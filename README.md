@@ -90,14 +90,5 @@ Before Deploy you have to get the [AWS Lambda Role Arn](http://docs.aws.amazon.c
 $ ROLE_ARN=xxxx APP=myLambda npm run deploy
 ```
 
-## Road Map
-
-* Move all shell commands to gulp
-* Add command to list all lambdas
-* Add command to remove a lambda function locally
-* Create a Web UI with Reactjs & Redux
-* Give Support to other platforms
-* Improve AWS integration with new commands
-
 ## Contribute
 You can contribute just opening new [issues here](https://github.com/dbuarque/repack-lambda/issues) or sending a pull request with tests
